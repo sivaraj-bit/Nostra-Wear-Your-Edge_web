@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title-->
+    <title>Nostra | Wear Your Edge</title>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon Img -->
+    <link rel="icon" type="image/png" href="./img/Favicon_img/Favicon.png">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h1 class="logo">Nostra 🛍️</h1>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <button id="menuBtn" class="menu-btn">☰</button>
+
+    </nav>
+
+    <!-- MOBILE MENU -->
+
+    <div id="mobileMenu" class="mobile-menu">
+
+        <a href="index.html">Home</a>
+        <a href="collections.html">Collections</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <!-- PAGE HEADING -->
+
+    <section class="page-heading">
+
+        <p class="small-title">NOSTRA STORE</p>
+        <h2>Our Collections</h2>
+        <p>Find something that matches your style.</p>
+
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="section">
+
+        <div class="controls">
+
+            <div class="search-box">
+
+                <span>🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+
+            </div>
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+                <option value="shirts">Shirts</option>
+                <option value="shoes">Shoes</option>
+                <option value="jackets">Jackets</option>
+                <option value="pants">Pants</option>
+
+            </select>
+
+            <select id="ratingFilter">
+
+                <option value="all">Best Rating</option>
+                <option value="5"> 5 Star Rating</option>
+                <option value="4"> 4+ Star Rating</option>
+
+            </select>
+
+            <button id="clearFilters" class="clear-btn">Clear Filters</button>
+
+        </div>
+
+        <!-- PRODUCT COUNT -->
+        <p id="productCount" class="product-count"></p>
+
+        <!-- PRODUCTS -->
+
+        <div class="product-container" id="productContainer">
+
+            <!-- 1. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="5">
+
+                <img src="./img/Collections/product1.jpg" alt="Running Shoes">
+
+                <div class="product-info">
+
+                    <span class="tag">SALE</span>
+                    <h3>Running Shoes</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,499</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 2. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="5">
+
+                <img src="./img/Collections/product2.jpg" alt="Classic T-Shirt">
+
+                <div class="product-info">
+
+                    <span class="tag">NEW</span>
+                    <h3>Classic T-Shirt</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹599</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 3. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="5">
+
+                <img src="./img/Collections/product3.jpg" alt="Classic Jacket">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Classic Jacket</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,999</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 4. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="5">
+
+                <img src="./img/Collections/product4.jpg" alt="Denim Jeans">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Denim Jeans</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,199</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 5. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="4">
+
+                <img src="./img/Collections/product5.jpg" alt="Casual shoes">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Casual Shoes</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,299</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 6. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="4">
+
+                <img src="./img/Collections/product6.jpg" alt="Formal Shirt">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Formal Shirt</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹899</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 7. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="4">
+
+                <img src="./img/Collections/product7.jpg" alt="Winter Jacket">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Winter Jacket</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹2,499</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+            <!-- 8. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="4">
+
+                <img src="./img/Collections/product8.jpg" alt="Casual Pants">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Casual Pants</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹999</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 9. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="5">
+
+                <img src="./img/Collections/product9.jpg" alt="Sport Sneakers">
+
+                <div class="product-info">
+
+                    <span class="tag">NEW</span>
+                    <h3>Sport Sneakers</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,799</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 10. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="5">
+
+                <img src="./img/Collections/product10.jpg" alt="Casual Shirt">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Casual Shirt</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹799</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 11. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="5">
+
+                <img src="./img/Collections/product11.jpg" alt="Leather Jacket">
+
+                <div class="product-info">
+
+                    <span class="tag">NEW</span>
+                    <h3>Leather Jacket</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹3,499</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 12. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="5">
+
+                <img src="./img/Collections/product12.jpg" alt="Chino Pants">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Chino Pants</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,099</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 13. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="4">
+
+                <img src="./img/Collections/product13.jpg" alt="White Sneakers">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>White Sneakers</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,599</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 14. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="4">
+
+                <img src="./img/Collections/product14.jpg" alt="Oxford Shirt">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Oxford Shirt</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹999</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 15. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="5">
+
+                <img src="./img/Collections/product15.jpg" alt="Bomber Jacket">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Bomber Jacket</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹2,799</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 16. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="5">
+
+                <img src="./img/Collections/product16.jpg" alt="Slim Fit Jeans">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Slim Fit Jeans</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,399</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 17. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="5">
+
+                <img src="./img/Collections/product17.jpg" alt="Training Shoes">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Training Shoes</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,899</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 18. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="5">
+
+                <img src="./img/Collections/product18.jpg" alt="Denim Shirt">
+
+                <div class="product-info">
+
+                    <span class="tag">SALE</span>
+                    <h3>Denim Shirt</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,099</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 19. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="4">
+
+                <img src="./img/Collections/product19.jpg" alt="Casual Jacket">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Casual Jacket</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹2,199</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 20. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="4">
+
+                <img src="./img/Collections/product20.jpg" alt="Cargo Pants">
+
+                <div class="product-info">
+
+                    <span class="tag">NEW</span>
+                    <h3>Cargo Pants</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,299</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 21. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="4">
+
+                <img src="./img/Collections/product21.jpg" alt="Walking Shoes">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Walking Shoes</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,199</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 22. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="4">
+
+                <img src="./img/Collections/product22.jpg" alt="Polo Shirt">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Polo Shirt</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹699</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 23. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="5">
+
+                <img src="./img/Collections/product23.jpg" alt="Hooded Jacket">
+
+                <div class="product-info">
+
+                    <span class="tag">SALE</span>
+                    <h3>Hooded Jacket</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹2,399</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 24. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="5">
+
+                <img src="./img/Collections/product24.jpg" alt="Jogger Pants">
+
+                <div class="product-info">
+
+                    <span class="tag">SALE</span>
+                    <h3>Jogger Pants</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹899</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 25. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="5">
+
+                <img src="./img/Collections/product25.jpg" alt="Street Sneakers">
+
+                <div class="product-info">
+
+                    <span class="tag">NEW</span>
+                    <h3>Street Sneakers</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,699</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 26. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="5">
+
+                <img src="./img/Collections/product26.jpg" alt="Printed Shirt">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Printed Shirt</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹849</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 27. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="4">
+
+                <img src="./img/Collections/product27.jpg" alt="Puffer Jacket">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Puffer Jacket</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹2,999</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 28. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="4">
+
+                <img src="./img/Collections/product28.jpg" alt="Relaxed Fit Pants">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Fit Pants</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,099</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 29. SHOES -->
+
+            <div class="product-card product" data-category="shoes" data-rating="5">
+
+                <img src="./img/Collections/product29.jpg" alt="Premium Shoes">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Premium Shoes</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹2,199</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 30. SHIRTS -->
+
+            <div class="product-card product" data-category="shirts" data-rating="4">
+
+                <img src="./img/Collections/product30.jpg" alt="Linen Shirt">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Linen Shirt</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,199</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 31. JACKETS -->
+
+            <div class="product-card product" data-category="jackets" data-rating="4">
+
+                <img src="./img/Collections/product31.jpg" alt="Puffer Coat">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Puffer Coat</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹3,199</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- 32. PANTS -->
+
+            <div class="product-card product" data-category="pants" data-rating="4">
+
+                <img src="./img/Collections/product32.jpg" alt="Formal Pants">
+
+                <div class="product-info">
+
+                    <br>
+                    <h3>Formal Pants</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,399</p>
+                    <button class="buy-btn">Buy Now</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- NO PRODUCTS MESSAGE -->
+
+        <p id="noProducts" class="no-products">
+            No products found.
+        </p>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>Nostra</h2>
+
+        <p>Fashion for everyone, every day.</p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <p>© 2026 Nostra. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
